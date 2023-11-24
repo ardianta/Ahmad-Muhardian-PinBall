@@ -5,7 +5,6 @@ using UnityEngine;
 public class PaddleController : MonoBehaviour
 {
     public KeyCode input;
-    public float springPower;
 
     // menyimpan angka target position saat ditekan dan dilepas
     private float targetPressed;
@@ -27,7 +26,6 @@ public class PaddleController : MonoBehaviour
     void Update()
     {
         ReadInput();
-        MovePaddle();
     }
 
     private void ReadInput()
@@ -48,10 +46,5 @@ public class PaddleController : MonoBehaviour
 
         // update value pada Hinge Joint component
         hinge.spring = jointSpring;
-    }
-
-    private void MovePaddle()
-    {
-
     }
 }
