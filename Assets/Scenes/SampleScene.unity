@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743880853762016796, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.780615
+      value: 5.22
       objectReference: {fileID: 0}
     - target: {fileID: 743880853762016796, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_LocalPosition.y
@@ -187,6 +187,22 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 0f63bf3a0a80febe99889574e81a1984, type: 2}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: bola
+      value: 
+      objectReference: {fileID: 1027595557}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.b
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.g
+      value: 0.18422426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.r
+      value: 0.08503916
+      objectReference: {fileID: 0}
     - target: {fileID: 4912391520214237977, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_Name
       value: Bumper (1)
@@ -483,7 +499,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.5, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 30}
+  m_LocalScale: {x: 1, y: 2, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -588,7 +604,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.5, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 30}
+  m_LocalScale: {x: 1, y: 2, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1071,6 +1087,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 71.826, y: 0, z: 0}
+--- !u!135 &1027595557 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 2736066591500880863, guid: fa9d6c5f380727d5686bec3efd1f25bd, type: 3}
+  m_PrefabInstance: {fileID: 3111215828457053543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1212513017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1101,7 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743880853762016796, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.722137
+      value: 9.43
       objectReference: {fileID: 0}
     - target: {fileID: 743880853762016796, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1135,6 +1156,22 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 0f63bf3a0a80febe99889574e81a1984, type: 2}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: bola
+      value: 
+      objectReference: {fileID: 1027595557}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.b
+      value: 0.121395506
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.g
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.r
+      value: 0.2270108
+      objectReference: {fileID: 0}
     - target: {fileID: 4912391520214237977, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_Name
       value: Bumper (2)
@@ -1244,7 +1281,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.11, y: 1, z: 14.5}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1349,7 +1386,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02, y: 1, z: -14.5}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1368,7 +1405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7116772075339090213, guid: fa9d6c5f380727d5686bec3efd1f25bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.91
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 7116772075339090213, guid: fa9d6c5f380727d5686bec3efd1f25bd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1433,7 +1470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743880853762016796, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0452194
+      value: 1.43
       objectReference: {fileID: 0}
     - target: {fileID: 743880853762016796, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1475,6 +1512,22 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 0f63bf3a0a80febe99889574e81a1984, type: 2}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: bola
+      value: 
+      objectReference: {fileID: 1027595557}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.b
+      value: 0.07413671
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.g
+      value: 0.07413671
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607515860170849308, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: color.r
+      value: 0.9245283
+      objectReference: {fileID: 0}
     - target: {fileID: 4912391520214237977, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_Name
       value: Bumper

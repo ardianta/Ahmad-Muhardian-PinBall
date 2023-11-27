@@ -7,6 +7,8 @@ public class BumperController : MonoBehaviour
     // menyimpan variabel bola sebagai ref untuk pengecekan
     public Collider bola;
     public float multiplier;
+    public Color color;
+    private Renderer renderer;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -22,6 +24,8 @@ public class BumperController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        renderer = GetComponent<Renderer>();
+        renderer.material.color = color;
         
     }
 
