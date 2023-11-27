@@ -183,6 +183,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3286515303570333263, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 0f63bf3a0a80febe99889574e81a1984, type: 2}
     - target: {fileID: 4912391520214237977, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_Name
       value: Bumper (1)
@@ -237,14 +241,14 @@ HingeJoint:
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: -0.4, y: -0.5, z: 0}
-  m_Axis: {x: 0, y: 1, z: 0}
+  m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
-  m_UseSpring: 0
+  m_UseSpring: 1
   m_Spring:
-    spring: 0
-    damper: 0
+    spring: 10000
+    damper: 50
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -255,8 +259,8 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -50
-    max: 30
+    min: -30
+    max: 50
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -910,10 +914,10 @@ HingeJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
-  m_UseSpring: 0
+  m_UseSpring: 1
   m_Spring:
-    spring: 0
-    damper: 0
+    spring: 10000
+    damper: 50
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1127,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3286515303570333263, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 0f63bf3a0a80febe99889574e81a1984, type: 2}
     - target: {fileID: 4912391520214237977, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_Name
       value: Bumper (2)
@@ -1463,6 +1471,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3286515303570333263, guid: de4356487071edffaba8cf09d6219423, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 0f63bf3a0a80febe99889574e81a1984, type: 2}
     - target: {fileID: 4912391520214237977, guid: de4356487071edffaba8cf09d6219423, type: 3}
       propertyPath: m_Name
       value: Bumper
