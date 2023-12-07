@@ -8,7 +8,24 @@ public class BumperController : MonoBehaviour
     public Collider bola;
     public float multiplier;
     public Color color;
+
+    private Animator animator;
     private Renderer renderer;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        renderer = GetComponent<Renderer>();
+        renderer.material.color = color;
+
+        animator = GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -18,20 +35,10 @@ public class BumperController : MonoBehaviour
             // ambil rigidbody bola lalu kali kecepatan dengan multiplier
             Rigidbody bolaRig = bola.GetComponent<Rigidbody>();
             bolaRig.velocity *= multiplier;
+
+            // Trigger bumper animation
+            animator.SetTrigger("Hit"); // <-- nama trigger case sensitive, cek nama Trigger di Animator
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        renderer = GetComponent<Renderer>();
-        renderer.material.color = color;
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
