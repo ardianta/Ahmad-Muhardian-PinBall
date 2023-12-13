@@ -12,6 +12,8 @@ public class BumperController : MonoBehaviour
     private Animator animator;
     private Renderer renderer;
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,9 @@ public class BumperController : MonoBehaviour
 
             // Trigger bumper animation
             animator.SetTrigger("Hit"); // <-- nama trigger case sensitive, cek nama Trigger di Animator
+
+            // kita jalankan SFX saat tabrakan dengan bola pada posisi tabrakannya
+            audioManager.PlaySFX(collision.transform.position);
         }
     }
 
