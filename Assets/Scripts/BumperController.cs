@@ -13,6 +13,7 @@ public class BumperController : MonoBehaviour
     private Renderer renderer;
 
     public AudioManager audioManager;
+    public VFXManager vfxManager;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,9 @@ public class BumperController : MonoBehaviour
 
             // kita jalankan SFX saat tabrakan dengan bola pada posisi tabrakannya
             audioManager.PlaySFX(collision.transform.position);
+
+            // play VFX
+            vfxManager.PlayVFX(collision.transform.position);
         }
     }
 
