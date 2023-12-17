@@ -427,7 +427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbce40bfa40535089ec85693e6aa9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dummyTarget: {fileID: 1215854463}
+  returnTime: 1
+  followSpeed: 1
+  length: 5
+  target: {fileID: 1215854463}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -5,12 +5,16 @@ using UnityEngine;
 public class SwitchController : MonoBehaviour
 {
 
+    public AudioManager audioManager;
+    public VFXManager vfxManager; 
+
     public Collider bola;
     public Material offMaterial;
     public Material onMaterial;
 
     private bool isOn;
     private Renderer renderer;
+    
 
     private enum SwitchState
     {
@@ -66,10 +70,13 @@ public class SwitchController : MonoBehaviour
         if(state == SwitchState.On)
         {
             SetSwitch(false);
+            audioManager.PlaySwitchOffSFX(transform.position);
         }
         else
         {
             SetSwitch(true);
+            audioManager.PlaySwitchOnSFX(transform.position);
+            vfxManager.PlaySwitchVFX(transform.position);
         }
     }
 

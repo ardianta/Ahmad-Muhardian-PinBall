@@ -6,7 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     // kita masukan audio source BGM di sini
     public AudioSource bgmAudioSource;
-    public GameObject sfxAudioSource;
+    public GameObject sfxBumperAudioSource;
+    public GameObject sfxSwitchOnAudioSource;
+    public GameObject sfxSwitchOffAudioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -14,11 +16,6 @@ public class AudioManager : MonoBehaviour
         PlayBGM();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     // fungsi buat play BGM
     public void PlayBGM()
@@ -28,10 +25,20 @@ public class AudioManager : MonoBehaviour
 
     // fungsi buat play SFX
     // ini tidak di jalankan pada script ini, tapi nanti di jalankan pada script bumpernya
-    public void PlaySFX(Vector3 spawnPosition)
+    public void PlayBumperSFX(Vector3 spawnPosition)
     {
         // berbeda dengan bgm, disini kita buat script untuk 
     	// memunculkan prefabnya pada posisi sesuai dengan parameternya
-        GameObject.Instantiate(sfxAudioSource, spawnPosition, Quaternion.identity);
+        GameObject.Instantiate(sfxBumperAudioSource, spawnPosition, Quaternion.identity);
+    }
+
+    public void PlaySwitchOnSFX(Vector3 spawnPosition)
+    {
+        GameObject.Instantiate(sfxSwitchOnAudioSource, spawnPosition, Quaternion.identity);
+    }
+
+    public void PlaySwitchOffSFX(Vector3 spawnPosition)
+    {
+        GameObject.Instantiate(sfxSwitchOffAudioSource, spawnPosition, Quaternion.identity);
     }
 }

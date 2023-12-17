@@ -43,10 +43,10 @@ public class BumperController : MonoBehaviour
             animator.SetTrigger("Hit"); // <-- nama trigger case sensitive, cek nama Trigger di Animator
 
             // kita jalankan SFX saat tabrakan dengan bola pada posisi tabrakannya
-            audioManager.PlaySFX(collision.transform.position);
+            audioManager.PlayBumperSFX(collision.transform.position);
 
             // play VFX
-            vfxManager.PlayVFX(collision.transform.position);
+            vfxManager.PlayBumperVFX(collision.transform.position);
         }
     }
 
