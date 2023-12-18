@@ -8,12 +8,14 @@ public class MainMenuController : MonoBehaviour
 {
     public Button playButton;
     public Button exitButton;
+    public Button creditsButton;
 
     // Start is called before the first frame update
     void Start()
     {
         playButton.onClick.AddListener(PlayGame);
         exitButton.onClick.AddListener(ExitGame);
+        creditsButton.onClick.AddListener(OpenCredits);
     }
 
 
@@ -25,5 +27,10 @@ public class MainMenuController : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenCredits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }
