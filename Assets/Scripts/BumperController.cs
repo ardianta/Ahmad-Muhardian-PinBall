@@ -14,6 +14,8 @@ public class BumperController : MonoBehaviour
 
     public AudioManager audioManager;
     public VFXManager vfxManager;
+    public ScoreManager scoreManager;
+    public float score;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +49,9 @@ public class BumperController : MonoBehaviour
 
             // play VFX
             vfxManager.PlayBumperVFX(collision.transform.position);
+
+            // tambahkan score
+            scoreManager.AddScore(score);
         }
     }
 

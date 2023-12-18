@@ -7,6 +7,8 @@ public class SwitchController : MonoBehaviour
 
     public AudioManager audioManager;
     public VFXManager vfxManager; 
+    public ScoreManager scoreManager;
+    public float score;
 
     public Collider bola;
     public Material offMaterial;
@@ -77,6 +79,7 @@ public class SwitchController : MonoBehaviour
             SetSwitch(true);
             audioManager.PlaySwitchOnSFX(transform.position);
             vfxManager.PlaySwitchVFX(transform.position);
+            scoreManager.AddScore(score);
         }
     }
 
